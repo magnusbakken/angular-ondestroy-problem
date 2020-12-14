@@ -7,10 +7,7 @@ import { Component, Inject, InjectionToken } from '@angular/core';
   styleUrls: ['./dynamic.component.css']
 })
 export class DynamicComponent {
-
-  public constructor(
-    @Inject(OverlayRefToken) private readonly overlayRef: OverlayRef
-  ) { }
+  public constructor(@Inject(OverlayRefToken) private readonly overlayRef: OverlayRef) { }
 
   public onClick(): void {
     this.overlayRef.dispose();
